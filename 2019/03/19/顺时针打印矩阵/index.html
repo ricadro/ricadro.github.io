@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="题目描述请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。 解题思路由于每个空格替换成“%20”，则替换掉一个空格之后数组长度加2，然后倒序复制前数组即可。要注意⚠️数组长度，否则会出现数组越界的情况。">
+<meta name="description" content="题目描述输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，例如，如果输入如下4 X 4矩阵： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10. 解题思路 打印矩阵时，为一圈一圈打印，保证每一行每一列终点均大于等于起点即可。">
 <meta name="keywords" content="algorithm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="替换空格">
-<meta property="og:url" content="https://ricadro.github.io/2019/02/23/替换空格/index.html">
+<meta property="og:title" content="顺时针打印矩阵">
+<meta property="og:url" content="https://ricadro.github.io/2019/03/19/顺时针打印矩阵/index.html">
 <meta property="og:site_name" content="Ricadro">
-<meta property="og:description" content="题目描述请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。 解题思路由于每个空格替换成“%20”，则替换掉一个空格之后数组长度加2，然后倒序复制前数组即可。要注意⚠️数组长度，否则会出现数组越界的情况。">
+<meta property="og:description" content="题目描述输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，例如，如果输入如下4 X 4矩阵： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10. 解题思路 打印矩阵时，为一圈一圈打印，保证每一行每一列终点均大于等于起点即可。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-04T01:42:14.641Z">
+<meta property="og:image" content="https://ricadro.github.io/2019/03/19/顺时针打印矩阵/矩形.png">
+<meta property="og:updated_time" content="2019-03-24T13:03:39.619Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="替换空格">
-<meta name="twitter:description" content="题目描述请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。 解题思路由于每个空格替换成“%20”，则替换掉一个空格之后数组长度加2，然后倒序复制前数组即可。要注意⚠️数组长度，否则会出现数组越界的情况。">
+<meta name="twitter:title" content="顺时针打印矩阵">
+<meta name="twitter:description" content="题目描述输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，例如，如果输入如下4 X 4矩阵： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10. 解题思路 打印矩阵时，为一圈一圈打印，保证每一行每一列终点均大于等于起点即可。">
+<meta name="twitter:image" content="https://ricadro.github.io/2019/03/19/顺时针打印矩阵/矩形.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://ricadro.github.io/2019/02/23/替换空格/">
+  <link rel="canonical" href="https://ricadro.github.io/2019/03/19/顺时针打印矩阵/">
 
 
 
 
 
-  <title>替换空格 | Ricadro</title>
+  <title>顺时针打印矩阵 | Ricadro</title>
   
 
 
@@ -263,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2019/02/23/替换空格/">
+    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2019/03/19/顺时针打印矩阵/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ricadro">
@@ -280,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">替换空格</h1>
+          <h1 class="post-title" itemprop="name headline">顺时针打印矩阵</h1>
         
 
         <div class="post-meta">
@@ -292,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T14:43:21+08:00">
-                2019-02-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-19T21:55:38+08:00">
+                2019-03-19
               </time>
             
 
@@ -333,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/02/23/替换空格/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/23/替换空格/" itemprop="commentCount"></span>
+                <a href="/2019/03/19/顺时针打印矩阵/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/19/顺时针打印矩阵/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -342,7 +344,7 @@
 
           
           
-             <span id="/2019/02/23/替换空格/" class="leancloud_visitors" data-flag-title="替换空格">
+             <span id="/2019/03/19/顺时针打印矩阵/" class="leancloud_visitors" data-flag-title="顺时针打印矩阵">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -367,7 +369,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  238字
+                  255字
                 </span>
               
 
@@ -404,9 +406,12 @@
       
 
       
-        <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。</p>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>由于每个空格替换成“%20”，则替换掉一个空格之后数组长度加2，然后倒序复制前数组即可。要注意⚠️数组长度，否则会出现数组越界的情况。<br><a id="more"></a></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">    	String s = str.toString();</span><br><span class="line">        <span class="keyword">int</span> space = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt;= s.length() - <span class="number">1</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(s.charAt(i) == <span class="string">' '</span>)&#123;</span><br><span class="line">                space++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//s1为新数组长度。</span></span><br><span class="line">        <span class="keyword">int</span> s1 = s.length() + space * <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">char</span>[] s2 = <span class="keyword">new</span> <span class="keyword">char</span>[s1];</span><br><span class="line">        <span class="comment">//a为新数组复制后的第一个元素数组下标，须-1防止数组越界。</span></span><br><span class="line">        <span class="keyword">int</span> a = s1 - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = s.length() - <span class="number">1</span>;i &gt;= <span class="number">0</span>;i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(s.charAt(i) == <span class="string">' '</span>)&#123;</span><br><span class="line">                s2[a--] = <span class="string">'0'</span>;</span><br><span class="line">                s2[a--] = <span class="string">'2'</span>;</span><br><span class="line">                s2[a--] = <span class="string">'%'</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                s2[a--] = s.charAt(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> String(s2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>输入一个矩阵，按照从外向里以顺时针的顺序依次打印出每一个数字，例如，如果输入如下4 X 4矩阵： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 则依次打印出数字1,2,3,4,8,12,16,15,14,13,9,5,6,7,11,10.<br><img src="/2019/03/19/顺时针打印矩阵/矩形.png" alt="矩形"></p>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><ul>
+<li>打印矩阵时，为一圈一圈打印，保证每一行每一列终点均大于等于起点即可。<a id="more"></a>
+</li>
+</ul>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ArrayList&lt;Integer&gt; <span class="title">printMatrix</span><span class="params">(<span class="keyword">int</span> [][] matrix)</span> </span>&#123;</span><br><span class="line">       ArrayList&lt;Integer&gt; result = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">       <span class="keyword">int</span> r1 = <span class="number">0</span>, r2 = matrix.length - <span class="number">1</span>, c1 = <span class="number">0</span>, c2 = matrix[<span class="number">0</span>].length - <span class="number">1</span>;</span><br><span class="line">       <span class="keyword">while</span> (r1 &lt;= r2 &amp;&amp; c1 &lt;= c2) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = c1; i &lt;= c2; i++)&#123;</span><br><span class="line">                result.add(matrix[r1][i]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = r1 + <span class="number">1</span>; i &lt;= r2; i++)&#123;</span><br><span class="line">                result.add(matrix[i][c2]);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (r1 != r2)&#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = c2 - <span class="number">1</span>; i &gt;= c1; i--)&#123;</span><br><span class="line">                    result.add(matrix[r2][i]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (c1 != c2)&#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> i = r2 - <span class="number">1</span>; i &gt; r1; i--)&#123;</span><br><span class="line">                    result.add(matrix[i][c1]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            r1++; r2--; c1++; c2--;</span><br><span class="line">        &#125;</span><br><span class="line">            <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -465,8 +470,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/23/二维数组中的查找/" rel="next" title="二维数组中的查找">
-                <i class="fa fa-chevron-left"></i> 二维数组中的查找
+              <a href="/2019/03/18/二叉树的镜像/" rel="next" title="二叉树的镜像">
+                <i class="fa fa-chevron-left"></i> 二叉树的镜像
               </a>
             
           </div>
@@ -474,10 +479,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/23/从尾到头打印链表/" rel="prev" title="从尾到头打印链表">
-                从尾到头打印链表 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
