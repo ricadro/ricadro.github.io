@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="algorithm,">
+  <meta name="keywords" content="日常踩坑,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="题目描述请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。 解题思路由于每个空格替换成“%20”，则替换掉一个空格之后数组长度加2，然后倒序复制前数组即可。要注意⚠️数组长度，否则会出现数组越界的情况。">
-<meta name="keywords" content="algorithm">
+<meta name="description" content="说明最近在把一个 SSM 框架的仓库管理系统迁移到 SpringBoot 上，踩坑无数，最终都顺利解决，记录一下愉快的踩坑历程。 技术栈   技术 说明 官网     Spring Boot 容器+MVC框架 https://spring.io/projects/spring-boot   Shiro 认证和授权框架 http://shiro.apache.org/   MyBatis ORM框架">
+<meta name="keywords" content="日常踩坑">
 <meta property="og:type" content="article">
-<meta property="og:title" content="替换空格">
-<meta property="og:url" content="https://ricadro.github.io/2019/02/23/替换空格/index.html">
+<meta property="og:title" content="项目由 SSM 迁移到 SpringBoot-过程（一）">
+<meta property="og:url" content="https://ricadro.github.io/2019/03/28/项目由 SSM-迁移到 SpringBoot-过程（一）/index.html">
 <meta property="og:site_name" content="Ricadro">
-<meta property="og:description" content="题目描述请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。 解题思路由于每个空格替换成“%20”，则替换掉一个空格之后数组长度加2，然后倒序复制前数组即可。要注意⚠️数组长度，否则会出现数组越界的情况。">
+<meta property="og:description" content="说明最近在把一个 SSM 框架的仓库管理系统迁移到 SpringBoot 上，踩坑无数，最终都顺利解决，记录一下愉快的踩坑历程。 技术栈   技术 说明 官网     Spring Boot 容器+MVC框架 https://spring.io/projects/spring-boot   Shiro 认证和授权框架 http://shiro.apache.org/   MyBatis ORM框架">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-04T01:42:14.641Z">
+<meta property="og:updated_time" content="2019-03-28T02:20:33.340Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="替换空格">
-<meta name="twitter:description" content="题目描述请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。 解题思路由于每个空格替换成“%20”，则替换掉一个空格之后数组长度加2，然后倒序复制前数组即可。要注意⚠️数组长度，否则会出现数组越界的情况。">
+<meta name="twitter:title" content="项目由 SSM 迁移到 SpringBoot-过程（一）">
+<meta name="twitter:description" content="说明最近在把一个 SSM 框架的仓库管理系统迁移到 SpringBoot 上，踩坑无数，最终都顺利解决，记录一下愉快的踩坑历程。 技术栈   技术 说明 官网     Spring Boot 容器+MVC框架 https://spring.io/projects/spring-boot   Shiro 认证和授权框架 http://shiro.apache.org/   MyBatis ORM框架">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://ricadro.github.io/2019/02/23/替换空格/">
+  <link rel="canonical" href="https://ricadro.github.io/2019/03/28/项目由 SSM-迁移到 SpringBoot-过程（一）/">
 
 
 
 
 
-  <title>替换空格 | Ricadro</title>
+  <title>项目由 SSM 迁移到 SpringBoot-过程（一） | Ricadro</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2019/02/23/替换空格/">
+    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2019/03/28/项目由 SSM-迁移到 SpringBoot-过程（一）/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ricadro">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">替换空格</h1>
+          <h1 class="post-title" itemprop="name headline">项目由 SSM 迁移到 SpringBoot-过程（一）</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-23T14:43:21+08:00">
-                2019-02-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-28T09:34:49+08:00">
+                2019-03-28
               </time>
             
 
@@ -315,8 +315,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/剑指offer/" itemprop="url" rel="index">
-                    <span itemprop="name">剑指offer</span>
+                  <a href="/categories/日常问题/" itemprop="url" rel="index">
+                    <span itemprop="name">日常问题</span>
                   </a>
                 </span>
 
@@ -333,8 +333,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/02/23/替换空格/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/23/替换空格/" itemprop="commentCount"></span>
+                <a href="/2019/03/28/项目由 SSM-迁移到 SpringBoot-过程（一）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/28/项目由 SSM-迁移到 SpringBoot-过程（一）/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -342,7 +342,7 @@
 
           
           
-             <span id="/2019/02/23/替换空格/" class="leancloud_visitors" data-flag-title="替换空格">
+             <span id="/2019/03/28/项目由 SSM-迁移到 SpringBoot-过程（一）/" class="leancloud_visitors" data-flag-title="项目由 SSM 迁移到 SpringBoot-过程（一）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -367,7 +367,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  238字
+                  559字
                 </span>
               
 
@@ -383,7 +383,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  2分钟
                 </span>
               
             </div>
@@ -404,9 +404,70 @@
       
 
       
-        <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>请实现一个函数，将一个字符串中的每个空格替换成“%20”。例如，当字符串为We Are Happy.则经过替换之后的字符串为We%20Are%20Happy。</p>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>由于每个空格替换成“%20”，则替换掉一个空格之后数组长度加2，然后倒序复制前数组即可。要注意⚠️数组长度，否则会出现数组越界的情况。<br><a id="more"></a></p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">replaceSpace</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">    	String s = str.toString();</span><br><span class="line">        <span class="keyword">int</span> space = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt;= s.length() - <span class="number">1</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(s.charAt(i) == <span class="string">' '</span>)&#123;</span><br><span class="line">                space++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//s1为新数组长度。</span></span><br><span class="line">        <span class="keyword">int</span> s1 = s.length() + space * <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">char</span>[] s2 = <span class="keyword">new</span> <span class="keyword">char</span>[s1];</span><br><span class="line">        <span class="comment">//a为新数组复制后的第一个元素数组下标，须-1防止数组越界。</span></span><br><span class="line">        <span class="keyword">int</span> a = s1 - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = s.length() - <span class="number">1</span>;i &gt;= <span class="number">0</span>;i--)&#123;</span><br><span class="line">            <span class="keyword">if</span>(s.charAt(i) == <span class="string">' '</span>)&#123;</span><br><span class="line">                s2[a--] = <span class="string">'0'</span>;</span><br><span class="line">                s2[a--] = <span class="string">'2'</span>;</span><br><span class="line">                s2[a--] = <span class="string">'%'</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                s2[a--] = s.charAt(i);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> String(s2);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>最近在把一个 SSM 框架的仓库管理系统迁移到 SpringBoot 上，踩坑无数，最终都顺利解决，记录一下愉快的踩坑历程。</p>
+<h3 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h3><table>
+<thead>
+<tr>
+<th>技术</th>
+<th>说明</th>
+<th>官网</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring Boot</td>
+<td>容器+MVC框架</td>
+<td><a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener">https://spring.io/projects/spring-boot</a></td>
+</tr>
+<tr>
+<td>Shiro</td>
+<td>认证和授权框架</td>
+<td><a href="http://shiro.apache.org/" target="_blank" rel="noopener">http://shiro.apache.org/</a></td>
+</tr>
+<tr>
+<td>MyBatis</td>
+<td>ORM框架</td>
+<td><a href="http://www.mybatis.org/mybatis-3/zh/index.html" target="_blank" rel="noopener">http://www.mybatis.org/mybatis-3/zh/index.html</a></td>
+</tr>
+<tr>
+<td>PageHelper</td>
+<td>MyBatis物理分页插件</td>
+<td><a href="http://git.oschina.net/free/Mybatis_PageHelper" target="_blank" rel="noopener">http://git.oschina.net/free/Mybatis_PageHelper</a></td>
+</tr>
+<tr>
+<td>Swagger-UI</td>
+<td>文档生产工具</td>
+<td><a href="https://github.com/swagger-api/swagger-ui" target="_blank" rel="noopener">https://github.com/swagger-api/swagger-ui</a></td>
+</tr>
+<tr>
+<td>Druid</td>
+<td>数据库连接池</td>
+<td><a href="https://github.com/alibaba/druid" target="_blank" rel="noopener">https://github.com/alibaba/druid</a></td>
+</tr>
+<tr>
+<td>Lombok</td>
+<td>简化对象封装工具</td>
+<td><a href="https://github.com/rzwitserloot/lombok" target="_blank" rel="noopener">https://github.com/rzwitserloot/lombok</a></td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<h3 id="技术简介"><a href="#技术简介" class="headerlink" title="技术简介"></a>技术简介</h3><ul>
+<li>时下微服务是程序员需要掌握的技能之一，所以将此前的 SSM 迁移到 SpringBoot 为后续打下基础。在迁移的时候发现它真的是开箱即用，极大简化了Spring应用开发的过程。</li>
+<li>Shiro 作为认证和权限框架，实现了登录认证以及登录后的权限控制。</li>
+<li>Mybatis 以及 PageHelper 作为持久层框架以及分页插件。</li>
+<li>Swagger-UI Swagger是个前后端协作的利器，解析代码里的注解生成JSON文件，通过Swagger UI生成网页版的接口文档，可以在上面做简单的接口调试 。</li>
+<li>Druid 作为阿里开源的一款数据库连接池，提供了强大的监控和扩展功能。</li>
+<li>Lombok 是一个可以通过简单的注解形式来帮助我们简化消除一些必须有但显得很臃肿的Java代码的工具。</li>
+</ul>
+<h3 id="迁移过程"><a href="#迁移过程" class="headerlink" title="迁移过程"></a>迁移过程</h3><ul>
+<li>通过 IDE 创建向导快速创建一个Spring Boot项目；</li>
+<li>pom 文件中导入相应依赖，由于 Spring Boot 已经集成好了很多依赖，所以比之前 SSM 所需要的依赖要少，尤其是 Spring 相关的依赖，需要注意⚠️是否重复依赖。</li>
+<li>建立好相应的目录结构，方便迁移。</li>
+<li>由于之前是用 jsp 来实现前端页面的，所以没有用 SpringBoot 推荐的 thymeleaf 模版引擎，更加快速迁移。所以需要新增 webapp 文件夹以及 web.xml，目录结构与之前相似。</li>
+<li>这样项目骨架就基本搭建完成，之后一点一点添砖加瓦即可。</li>
+</ul>
+
       
     </div>
     
@@ -452,7 +513,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/algorithm/" rel="tag"># algorithm</a>
+            <a href="/tags/日常踩坑/" rel="tag"># 日常踩坑</a>
           
         </div>
       
@@ -465,8 +526,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/23/二维数组中的查找/" rel="next" title="二维数组中的查找">
-                <i class="fa fa-chevron-left"></i> 二维数组中的查找
+              <a href="/2019/03/26/栈的压入、弹出序列/" rel="next" title="栈的压入、弹出序列">
+                <i class="fa fa-chevron-left"></i> 栈的压入、弹出序列
               </a>
             
           </div>
@@ -474,10 +535,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/23/从尾到头打印链表/" rel="prev" title="从尾到头打印链表">
-                从尾到头打印链表 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -630,7 +687,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解题思路"><span class="nav-number">2.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术栈"><span class="nav-number">2.</span> <span class="nav-text">技术栈</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#技术简介"><span class="nav-number">3.</span> <span class="nav-text">技术简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#迁移过程"><span class="nav-number">4.</span> <span class="nav-text">迁移过程</span></a></li></ol></div>
             
 
           </div>
