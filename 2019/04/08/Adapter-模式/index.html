@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ricadro.github.io/2019/04/08/Adapter-模式/adapter.png">
 <meta property="og:image" content="https://ricadro.github.io/2019/04/08/Adapter-模式/UML.png">
-<meta property="og:updated_time" content="2019-04-08T10:32:50.283Z">
+<meta property="og:updated_time" content="2019-04-08T10:36:04.643Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Adapter 模式">
 <meta name="twitter:description" content="说明 最近在开发时，学习到了一种新的设计模式：Adapter 模式，即适配器模式，所以在此总结一下自己对于适配器模式的想法。  模式简介由于对接了许多第三方支付，所以会有很多类似于绑卡，转账等与第三方操作的情况是可以复用的，则可以通过适配器来完成绑卡，转账来实现复用，避免代码冗余。 这里借用图解设计模式一书中 Adapter 模式的示例图来举例，🔌为订单模块，插板为第三方系统，而我们要做的就是做">
@@ -418,7 +418,7 @@
 <li>类适配器模式（使用继承的适配器）</li>
 <li>对象适配器模式（使用委托的适配器）</li>
 </ul>
-<p>接下来就详细介绍一下使用的对象适配器模式<br><img src="/2019/04/08/Adapter-模式/UML.png" alt="adapter"><br>这里 client 即为订单中心；PayService 为定义系统所需要的方法，如绑卡，转账等；xxxPayService 则为满足 xxxPay 的需求，实现特定的绑卡，转账等需求；xxxPay 为被适配对象，即为每个不同第三方的订单。<br>xxxPayService 通过委托来使用 xxxPay 角色。</p>
+<p>接下来就详细介绍一下使用的对象适配器模式<br><img src="/2019/04/08/Adapter-模式/UML.png" alt="adapter"><br>这里 client 即为订单中心；PayService 为定义系统所需要的方法，如绑卡，转账等；xxxPayService 则为满足 xxxPay 的需求，实现特定的绑卡，转账等需求；xxxPay 为被适配对象，即为每个不同第三方的订单。xxxPayService 通过委托来使用 xxxPay 角色。</p>
 <h3 id="优劣"><a href="#优劣" class="headerlink" title="优劣"></a>优劣</h3><ul>
 <li>适配器通过对现有的 PayService 进行适配，生成新的类，通过这种模式，可以很快捷的构建出我们需要的方法，出现问题时，也可以很方便的排查。</li>
 <li>当定义好的参数无法满足新的第三方需求时，即需要修改适配器角色，则之前所有的适配需要重新修改，重新进行测试，我的想法是尽量通过对象或者 map 的方式进行传递参数，而不是定义特有的参数来适配，这样出现开头那样的情况也无需改动所有的 xxxPayService，只需对特有的 xxxPayService 进行参数校验等业务操作。</li>
@@ -491,6 +491,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/19/从上往下打印二叉树/" rel="prev" title="从上往下打印二叉树">
+                从上往下打印二叉树 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -572,7 +576,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-count">31</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -677,7 +681,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">10.1k</span>
+    <span title="Site words total count">10.3k</span>
   
 </div>
 
