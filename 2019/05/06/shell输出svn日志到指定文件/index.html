@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="shell,">
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Ricadro">
-<meta property="og:url" content="https://ricadro.github.io/archives/page/3/index.html">
+<meta name="description" content="问题描述由于项目很老，没有使用 Maven 构建，每次项目上线发布增量包的时候是使用 Ant Build 的，这里就需要一个文件清单，之前用 Windows 的时候，使用小乌龟可以很快捷的拷贝出所需的清单，换用 Mac 之后暂时还没找到好用的 svn 版本控制软件，只能从 IDE 中查找 svn 提交历史或是从终端查找，及其不方便，所以花了点时间从菜鸟教程上学了点 shell 脚本命令，基本实现了">
+<meta name="keywords" content="shell">
+<meta property="og:type" content="article">
+<meta property="og:title" content="shell输出svn日志到指定文件">
+<meta property="og:url" content="https://ricadro.github.io/2019/05/06/shell输出svn日志到指定文件/index.html">
 <meta property="og:site_name" content="Ricadro">
+<meta property="og:description" content="问题描述由于项目很老，没有使用 Maven 构建，每次项目上线发布增量包的时候是使用 Ant Build 的，这里就需要一个文件清单，之前用 Windows 的时候，使用小乌龟可以很快捷的拷贝出所需的清单，换用 Mac 之后暂时还没找到好用的 svn 版本控制软件，只能从 IDE 中查找 svn 提交历史或是从终端查找，及其不方便，所以花了点时间从菜鸟教程上学了点 shell 脚本命令，基本实现了">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-05-06T09:22:55.826Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ricadro">
+<meta name="twitter:title" content="shell输出svn日志到指定文件">
+<meta name="twitter:description" content="问题描述由于项目很老，没有使用 Maven 构建，每次项目上线发布增量包的时候是使用 Ant Build 的，这里就需要一个文件清单，之前用 Windows 的时候，使用小乌龟可以很快捷的拷贝出所需的清单，换用 Mac 之后暂时还没找到好用的 svn 版本控制软件，只能从 IDE 中查找 svn 提交历史或是从终端查找，及其不方便，所以花了点时间从菜鸟教程上学了点 shell 脚本命令，基本实现了">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://ricadro.github.io/archives/page/3/">
+  <link rel="canonical" href="https://ricadro.github.io/2019/05/06/shell输出svn日志到指定文件/">
 
 
 
 
 
-  <title>归档 | Ricadro</title>
+  <title>shell输出svn日志到指定文件 | Ricadro</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -244,390 +249,257 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
-        
-        
-         
-        
-        OK! 目前共计 32 篇日志。 继续努力。
-      </span>
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2019/05/06/shell输出svn日志到指定文件/">
 
-      
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ricadro">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ricadro">
+    </span>
+
+    
+      <header class="post-header">
 
         
         
+          <h1 class="post-title" itemprop="name headline">shell输出svn日志到指定文件</h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-06T17:04:08+08:00">
+                2019-05-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/25/跳台阶/" itemprop="url">
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="name">跳台阶</span>
+                <span class="post-meta-item-text">分类于</span>
               
-            </a>
-        
-      </h2>
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/日常问题/" itemprop="url" rel="index">
+                    <span itemprop="name">日常问题</span>
+                  </a>
+                </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-25T13:58:26+08:00" content="2019-02-25">
-          02-25
-        </time>
-      </div>
+                
+                
+              
+            </span>
+          
 
-    </header>
-  </article>
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/06/shell输出svn日志到指定文件/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/06/shell输出svn日志到指定文件/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
+          
+          
+             <span id="/2019/05/06/shell输出svn日志到指定文件/" class="leancloud_visitors" data-flag-title="shell输出svn日志到指定文件">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  375字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/25/ionic手势滑动问题/" itemprop="url">
-              
-                <span itemprop="name">ionic手势滑动问题</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-25T13:34:26+08:00" content="2019-02-25">
-          02-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/25/斐波那契数列/" itemprop="url">
-              
-                <span itemprop="name">斐波那契数列</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-25T09:41:20+08:00" content="2019-02-25">
-          02-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>由于项目很老，没有使用 Maven 构建，每次项目上线发布增量包的时候是使用 Ant Build 的，这里就需要一个文件清单，之前用 Windows 的时候，使用小乌龟可以很快捷的拷贝出所需的清单，换用 Mac 之后暂时还没找到好用的 svn 版本控制软件，只能从 IDE 中查找 svn 提交历史或是从终端查找，及其不方便，所以花了点时间从菜鸟教程上学了点 shell 脚本命令，基本实现了自己所需要的功能，下面是脚本。</p>
+<a id="more"></a>
+<h3 id="shell-脚本"><a href="#shell-脚本" class="headerlink" title="shell 脚本"></a>shell 脚本</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">exec 7&gt;SVNLog.txt</span><br><span class="line">echo "查看 svn 版本信息";</span><br><span class="line"></span><br><span class="line">if [ -n "$2" ]; then</span><br><span class="line">    echo "首版本为："$1"" ;</span><br><span class="line">    echo "末版本为："$2"" ;</span><br><span class="line">    svn log -r $1:$2 -v &gt;&amp;7;</span><br><span class="line">    echo "svn log 已输出到 SVNLog 中" ;</span><br><span class="line">elif [ -n "$1" ]; then</span><br><span class="line">    echo "首版本为："$1"" ;</span><br><span class="line">    echo "末版本为："$1"" ;</span><br><span class="line">    svn log -r $1:$1 -v &gt;&amp;7;</span><br><span class="line">    echo "svn log 已输出到 SVNLog 中" ;</span><br><span class="line">else</span><br><span class="line">    echo "请输入查询所需版本号";</span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<h3 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h3><ul>
+<li>首先运行<code>./test.sh 38243 38258</code>，其中后两个参数为查询所需版本号，也可只输入一个参数即为查询该版本日志。</li>
+<li>然后从目录下找到 SVNLog.txt，复制所需日志信息即可。</li>
+<li>本人感觉这种解决办法和之前在终端查找日志的方式差不多，但是有时候会忘记那个查找日志的命令还需要查一下，写成脚本即方便许多。</li>
+</ul>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/24/旋转数组中的最小数字/" itemprop="url">
-              
-                <span itemprop="name">旋转数组中的最小数字</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-24T20:08:52+08:00" content="2019-02-24">
-          02-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/24/用两个栈实现队列/" itemprop="url">
-              
-                <span itemprop="name">用两个栈实现队列</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-24T19:54:08+08:00" content="2019-02-24">
-          02-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/24/重建二叉树/" itemprop="url">
-              
-                <span itemprop="name">重建二叉树</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-24T12:52:08+08:00" content="2019-02-24">
-          02-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/23/从尾到头打印链表/" itemprop="url">
-              
-                <span itemprop="name">从尾到头打印链表</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T23:00:16+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/23/替换空格/" itemprop="url">
-              
-                <span itemprop="name">替换空格</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T14:43:21+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/23/二维数组中的查找/" itemprop="url">
-              
-                <span itemprop="name">二维数组中的查找</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-23T11:49:28+08:00" content="2019-02-23">
-          02-23
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/02/22/HttpUtils/" itemprop="url">
-              
-                <span itemprop="name">HttpUtils</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-22T17:08:17+08:00" content="2019-02-22">
-          02-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="ricadro 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpeg" alt="ricadro 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/shell/" rel="tag"># shell</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/19/从上往下打印二叉树/" rel="next" title="从上往下打印二叉树">
+                <i class="fa fa-chevron-left"></i> 从上往下打印二叉树
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/">1</a><a class="page-number" href="/archives/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/archives/page/4/">4</a><a class="extend next" rel="next" href="/archives/page/4/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -635,6 +507,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -655,8 +536,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -732,6 +622,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#shell-脚本"><span class="nav-number">2.</span> <span class="nav-text">shell 脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果"><span class="nav-number">3.</span> <span class="nav-text">结果</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -881,6 +787,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
