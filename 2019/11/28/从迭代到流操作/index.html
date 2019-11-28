@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Ricadro">
 <meta property="og:description" content="最近在阅读 Java 核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助 Google 翻译，希望在之后的阅读翻译过程中，会有很大的进步。1.1 从迭代到流操作当处理一个集合时，你通常通过迭代遍历集合的每一个元素并对其进行操作。例如，我们想统计一本书中的长单词，首先，我们要把它们放进 list 中 1234String contents = new String(F">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-28T06:20:50.469Z">
+<meta property="og:updated_time" content="2019-11-28T06:27:29.897Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从迭代到流操作">
 <meta name="twitter:description" content="最近在阅读 Java 核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助 Google 翻译，希望在之后的阅读翻译过程中，会有很大的进步。1.1 从迭代到流操作当处理一个集合时，你通常通过迭代遍历集合的每一个元素并对其进行操作。例如，我们想统计一本书中的长单词，首先，我们要把它们放进 list 中 1234String contents = new String(F">
@@ -412,7 +412,7 @@
 <p>当用到 stream 时，同样的操作可能是这样的。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> count = words.stream()</span><br><span class="line">      .filter(w -&gt; w.length() &gt; <span class="number">12</span>)</span><br><span class="line">      .count();</span><br></pre></td></tr></table></figure>
 <p>现在，无需通过循环来获得过滤和计数的节点，方法名称即可告知你代码打算做什么。此外，在循环详细规定了操作顺序的情况下，只要结果正确，stream 就可以按其希望的任何方式调度操作。</p>
-<p>只要把 stream 改为 parallelStream，就可以使 stream library 并行过滤以及技术</p>
+<p>只要把 stream 改为 parallelStream，就可以使 stream library 并行过滤以及计数</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> count = words.parallelStream()</span><br><span class="line">      .filter(w -&gt; w.length() &gt; <span class="number">12</span>)</span><br><span class="line">      .count();</span><br></pre></td></tr></table></figure>
 <p>Streams 遵循“是什么，而不是怎么做”的原则，在最初的流示例中，我们描述了需要做到什么：获得长单词并对其计数。我们没有指明过滤的顺序以及线程。相反，本节开头的循环遍历指定了过滤的工作方式，从而放弃了任何优化此过滤的机会。</p>
 <p>流从表面上看的话，与集合类似，允许你转换并操作数据，但是它们两者之间有根本性的区别。</p>
