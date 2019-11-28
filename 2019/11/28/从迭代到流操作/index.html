@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Design Patterns,">
+  <meta name="keywords" content="java 核心技术卷2高级特性,">
 
 
 
@@ -79,21 +79,18 @@
 
 
 
-<meta name="description" content="说明 最近在开发时，学习到了一种新的设计模式：Adapter 模式，即适配器模式，所以在此总结一下自己对于适配器模式的想法。  模式简介由于对接了许多第三方支付，所以会有很多类似于绑卡，转账等与第三方操作的情况是可以复用的，则可以通过适配器来完成绑卡，转账来实现复用，避免代码冗余。 这里借用图解设计模式一书中 Adapter 模式的示例图来举例，🔌为订单模块，插板为第三方系统，而我们要做的就是做">
-<meta name="keywords" content="Design Patterns">
+<meta name="description" content="最近在阅读 Java 核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助 Google 翻译，希望在之后的阅读翻译过程中，会有很大的进步。1.1 从迭代到流操作当处理一个集合时，你通常通过迭代遍历集合的每一个元素并对其进行操作。例如，我们想统计一本书中的长单词，首先，我们要把它们放进 list 中 1234String contents = new String(F">
+<meta name="keywords" content="java 核心技术卷2高级特性">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Adapter 模式">
-<meta property="og:url" content="https://ricadro.github.io/2019/04/08/Adapter-模式/index.html">
+<meta property="og:title" content="从迭代到流操作">
+<meta property="og:url" content="https://ricadro.github.io/2019/11/28/从迭代到流操作/index.html">
 <meta property="og:site_name" content="Ricadro">
-<meta property="og:description" content="说明 最近在开发时，学习到了一种新的设计模式：Adapter 模式，即适配器模式，所以在此总结一下自己对于适配器模式的想法。  模式简介由于对接了许多第三方支付，所以会有很多类似于绑卡，转账等与第三方操作的情况是可以复用的，则可以通过适配器来完成绑卡，转账来实现复用，避免代码冗余。 这里借用图解设计模式一书中 Adapter 模式的示例图来举例，🔌为订单模块，插板为第三方系统，而我们要做的就是做">
+<meta property="og:description" content="最近在阅读 Java 核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助 Google 翻译，希望在之后的阅读翻译过程中，会有很大的进步。1.1 从迭代到流操作当处理一个集合时，你通常通过迭代遍历集合的每一个元素并对其进行操作。例如，我们想统计一本书中的长单词，首先，我们要把它们放进 list 中 1234String contents = new String(F">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ricadro.github.io/2019/04/08/Adapter-模式/adapter.png">
-<meta property="og:image" content="https://ricadro.github.io/2019/04/08/Adapter-模式/UML.png">
-<meta property="og:updated_time" content="2019-04-08T10:36:04.643Z">
+<meta property="og:updated_time" content="2019-11-28T06:20:50.469Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Adapter 模式">
-<meta name="twitter:description" content="说明 最近在开发时，学习到了一种新的设计模式：Adapter 模式，即适配器模式，所以在此总结一下自己对于适配器模式的想法。  模式简介由于对接了许多第三方支付，所以会有很多类似于绑卡，转账等与第三方操作的情况是可以复用的，则可以通过适配器来完成绑卡，转账来实现复用，避免代码冗余。 这里借用图解设计模式一书中 Adapter 模式的示例图来举例，🔌为订单模块，插板为第三方系统，而我们要做的就是做">
-<meta name="twitter:image" content="https://ricadro.github.io/2019/04/08/Adapter-模式/adapter.png">
+<meta name="twitter:title" content="从迭代到流操作">
+<meta name="twitter:description" content="最近在阅读 Java 核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助 Google 翻译，希望在之后的阅读翻译过程中，会有很大的进步。1.1 从迭代到流操作当处理一个集合时，你通常通过迭代遍历集合的每一个元素并对其进行操作。例如，我们想统计一本书中的长单词，首先，我们要把它们放进 list 中 1234String contents = new String(F">
 
 
 
@@ -123,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://ricadro.github.io/2019/04/08/Adapter-模式/">
+  <link rel="canonical" href="https://ricadro.github.io/2019/11/28/从迭代到流操作/">
 
 
 
 
 
-  <title>Adapter 模式 | Ricadro</title>
+  <title>从迭代到流操作 | Ricadro</title>
   
 
 
@@ -266,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2019/04/08/Adapter-模式/">
+    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2019/11/28/从迭代到流操作/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ricadro">
@@ -283,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Adapter 模式</h1>
+          <h1 class="post-title" itemprop="name headline">从迭代到流操作</h1>
         
 
         <div class="post-meta">
@@ -295,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-08T17:33:05+08:00">
-                2019-04-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-11-28T14:13:02+08:00">
+                2019-11-28
               </time>
             
 
@@ -318,8 +315,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/设计模式/" itemprop="url" rel="index">
-                    <span itemprop="name">设计模式</span>
+                  <a href="/categories/译文/" itemprop="url" rel="index">
+                    <span itemprop="name">译文</span>
                   </a>
                 </span>
 
@@ -336,8 +333,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/04/08/Adapter-模式/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/08/Adapter-模式/" itemprop="commentCount"></span>
+                <a href="/2019/11/28/从迭代到流操作/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/11/28/从迭代到流操作/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -345,7 +342,7 @@
 
           
           
-             <span id="/2019/04/08/Adapter-模式/" class="leancloud_visitors" data-flag-title="Adapter 模式">
+             <span id="/2019/11/28/从迭代到流操作/" class="leancloud_visitors" data-flag-title="从迭代到流操作">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -370,7 +367,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  507字
+                  1k字
                 </span>
               
 
@@ -386,7 +383,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  4分钟
                 </span>
               
             </div>
@@ -407,22 +404,33 @@
       
 
       
-        <h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><ul>
-<li>最近在开发时，学习到了一种新的设计模式：Adapter 模式，即适配器模式，所以在此总结一下自己对于适配器模式的想法。</li>
-</ul>
-<h3 id="模式简介"><a href="#模式简介" class="headerlink" title="模式简介"></a>模式简介</h3><p>由于对接了许多第三方支付，所以会有很多类似于绑卡，转账等与第三方操作的情况是可以复用的，则可以通过适配器来完成绑卡，转账来实现复用，避免代码冗余。</p>
-<p><img src="/2019/04/08/Adapter-模式/adapter.png" alt="adapter"><br>这里借用图解设计模式一书中 Adapter 模式的示例图来举例，🔌为订单模块，插板为第三方系统，而我们要做的就是做一个中间的适配器，来将各种第三方的特有订单进行处理。</p>
+        <h3 id="最近在阅读-Java-核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助-Google-翻译，希望在之后的阅读翻译过程中，会有很大的进步。"><a href="#最近在阅读-Java-核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助-Google-翻译，希望在之后的阅读翻译过程中，会有很大的进步。" class="headerlink" title="最近在阅读 Java 核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助 Google 翻译，希望在之后的阅读翻译过程中，会有很大的进步。"></a>最近在阅读 Java 核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助 Google 翻译，希望在之后的阅读翻译过程中，会有很大的进步。</h3><h3 id="1-1-从迭代到流操作"><a href="#1-1-从迭代到流操作" class="headerlink" title="1.1 从迭代到流操作"></a>1.1 从迭代到流操作</h3><p>当处理一个集合时，你通常通过迭代遍历集合的每一个元素并对其进行操作。例如，我们想统计一本书中的长单词，首先，我们要把它们放进 list 中</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String contents = <span class="keyword">new</span> String(Files.readAllBytes(</span><br><span class="line">      Paths.get(<span class="string">"alice.txt"</span>)), StandardCharsets.UTF_8); <span class="comment">// Read file into string</span></span><br><span class="line">List&lt;String&gt; words = Arrays.asList(contents.split(<span class="string">"[\\P&#123;L&#125;]+"</span>));</span><br><span class="line">      <span class="comment">// Split into words; nonletters are delimiters</span></span><br></pre></td></tr></table></figure>
+<p>然后我们开始迭代</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (String w : words)</span><br><span class="line">&#123;</span><br><span class="line">      <span class="keyword">if</span> (w.length() &gt; <span class="number">12</span>) count++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h3 id="Adapter-模式"><a href="#Adapter-模式" class="headerlink" title="Adapter 模式"></a>Adapter 模式</h3><p>Adapter 模式有以下两种：</p>
+<p>当用到 stream 时，同样的操作可能是这样的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> count = words.stream()</span><br><span class="line">      .filter(w -&gt; w.length() &gt; <span class="number">12</span>)</span><br><span class="line">      .count();</span><br></pre></td></tr></table></figure>
+<p>现在，无需通过循环来获得过滤和计数的节点，方法名称即可告知你代码打算做什么。此外，在循环详细规定了操作顺序的情况下，只要结果正确，stream 就可以按其希望的任何方式调度操作。</p>
+<p>只要把 stream 改为 parallelStream，就可以使 stream library 并行过滤以及技术</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">long</span> count = words.parallelStream()</span><br><span class="line">      .filter(w -&gt; w.length() &gt; <span class="number">12</span>)</span><br><span class="line">      .count();</span><br></pre></td></tr></table></figure>
+<p>Streams 遵循“是什么，而不是怎么做”的原则，在最初的流示例中，我们描述了需要做到什么：获得长单词并对其计数。我们没有指明过滤的顺序以及线程。相反，本节开头的循环遍历指定了过滤的工作方式，从而放弃了任何优化此过滤的机会。</p>
+<p>流从表面上看的话，与集合类似，允许你转换并操作数据，但是它们两者之间有根本性的区别。</p>
 <ul>
-<li>类适配器模式（使用继承的适配器）</li>
-<li>对象适配器模式（使用委托的适配器）</li>
+<li>流不存储它的元素，它们可以存储在基础的集合中或者通过指令来生成</li>
+<li>流的操作不会改变其原来的数据源。例如，filter() 方法不会从新的流中移除元素，但是会生成一个不存在它们的新流。</li>
+<li>流的操作是懒加载的，就是说如果结果不需要的话，它们是不会继续执行的。例如，如果你只需要前五个长单词而不是全部，filter 方法将在匹配到第五个长单词后停止过滤。结果，你甚至可以有无限的流。</li>
 </ul>
-<p>接下来就详细介绍一下使用的对象适配器模式<br><img src="/2019/04/08/Adapter-模式/UML.png" alt="adapter"><br>这里 client 即为订单中心；PayService 为定义系统所需要的方法，如绑卡，转账等；xxxPayService 则为满足 xxxPay 的需求，实现特定的绑卡，转账等需求；xxxPay 为被适配对象，即为每个不同第三方的订单。xxxPayService 通过委托来使用 xxxPay 角色。</p>
-<h3 id="优劣"><a href="#优劣" class="headerlink" title="优劣"></a>优劣</h3><ul>
-<li>适配器通过对现有的 PayService 进行适配，生成新的类，通过这种模式，可以很快捷的构建出我们需要的方法，出现问题时，也可以很方便的排查。</li>
-<li>当定义好的参数无法满足新的第三方需求时，即需要修改适配器角色，则之前所有的适配需要重新修改，重新进行测试，我的想法是尽量通过对象或者 map 的方式进行传递参数，而不是定义特有的参数来适配，这样出现开头那样的情况也无需改动所有的 xxxPayService，只需对特有的 xxxPayService 进行参数校验等业务操作。</li>
+<p>让我们来看一个其他的例子，stream() 与 parallelStream() 方法生成了包含单词列表的流，filter() 方法返回了一个新的包含那些长度大于12的长单词的流，count() 方法将该流减少为结果。</p>
+<p>当你使用流时，可以通过以下三步操作来进行。</p>
+<ul>
+<li>创建一个 stream</li>
+<li>指定将初始的流转化为其他流的步骤</li>
+<li>应用终端操作来产生结果，此操作将强制执行之前的惰性操作。之后，将无法使用该流。</li>
 </ul>
+<p>在 1.1 中的例子，用 stream() 或者 parallelStream() 方法来创建流，filter() 方法会处理这个流，count() 方法会产生最终结果。</p>
+<p>以下是 1.1 中所用的部分代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"> <span class="number">1</span>      <span class="keyword">package</span> streams;</span><br><span class="line"> <span class="number">2</span></span><br><span class="line"> <span class="number">3</span>      <span class="keyword">import</span> java.io.IOException;</span><br><span class="line"> <span class="number">4</span>      <span class="keyword">import</span> java.nio.charset.StandardCharsets;</span><br><span class="line"> <span class="number">5</span>      <span class="keyword">import</span> java.nio.file.Files;</span><br><span class="line"> <span class="number">6</span>      <span class="keyword">import</span> java.nio.file.Paths;</span><br><span class="line"> <span class="number">7</span>      <span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"> <span class="number">8</span>      <span class="keyword">import</span> java.util.List;</span><br><span class="line"> <span class="number">9</span></span><br><span class="line"><span class="number">10</span>      <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CountLongWords</span></span></span><br><span class="line"><span class="class">11      </span>&#123;</span><br><span class="line"><span class="number">12</span>            <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException</span></span><br><span class="line"><span class="function">13            </span>&#123;</span><br><span class="line"><span class="number">14</span>                  String contents = <span class="keyword">new</span> String(Files.readAllBytes(</span><br><span class="line"><span class="number">15</span>						StandardCharsets.UTF_8);</span><br><span class="line"><span class="number">16</span>                  List&lt;String&gt; words = Arrays.asList(contents.split(<span class="string">"\\PL+"</span>));</span><br><span class="line"><span class="number">17</span></span><br><span class="line"><span class="number">18</span>                  <span class="keyword">long</span> count = <span class="number">0</span>;</span><br><span class="line"><span class="number">19</span>                  <span class="keyword">for</span> (String w : words)</span><br><span class="line"><span class="number">20</span>                  &#123;</span><br><span class="line"><span class="number">21</span>                        <span class="keyword">if</span> (w.length() &gt; <span class="number">12</span>) count++;</span><br><span class="line"><span class="number">22</span>                  &#125;</span><br><span class="line"><span class="number">23</span>                  System.out.println(count);</span><br><span class="line"><span class="number">24</span></span><br><span class="line"><span class="number">25</span>                  count = words.stream().filter(w -&gt; w.length() &gt; <span class="number">12</span>).count();</span><br><span class="line"><span class="number">26</span>                  System.out.println(count);</span><br><span class="line"><span class="number">27</span></span><br><span class="line"><span class="number">28</span> count = words.parallelStream().filter(w -&gt; w.length() &gt; <span class="number">12</span>).count();</span><br><span class="line"><span class="number">29</span>                  System.out.println(count);</span><br><span class="line"><span class="number">30</span> 			  &#125; </span><br><span class="line"><span class="number">31</span> 		&#125;</span><br><span class="line">                                                 </span><br><span class="line">java.util.stream.Stream&lt;T&gt; <span class="number">8</span></span><br><span class="line">• <span class="function">Stream&lt;T&gt; <span class="title">filter</span><span class="params">(Predicate&lt;T&gt; p)</span></span></span><br><span class="line"><span class="function">Yields a stream containing all elements of <span class="keyword">this</span> stream fulfilling p.</span></span><br><span class="line"><span class="function">• <span class="keyword">long</span> <span class="title">count</span><span class="params">()</span></span></span><br><span class="line"><span class="function">Yields the number of elements of <span class="keyword">this</span> stream. This is a terminal operation. </span></span><br><span class="line"><span class="function">                                                 </span></span><br><span class="line"><span class="function">java.util.Collection&lt;E&gt; 1.2</span></span><br><span class="line"><span class="function">• <span class="keyword">default</span> Stream&lt;E&gt; <span class="title">stream</span><span class="params">()</span></span></span><br><span class="line"><span class="function">• <span class="keyword">default</span> Stream&lt;E&gt; <span class="title">parallelStream</span><span class="params">()</span></span></span><br><span class="line"><span class="function">Yields a sequential or parallel stream of the elements in <span class="keyword">this</span> collection.</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -469,7 +477,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Design-Patterns/" rel="tag"># Design Patterns</a>
+            <a href="/tags/java-核心技术卷2高级特性/" rel="tag"># java 核心技术卷2高级特性</a>
           
         </div>
       
@@ -482,8 +490,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/29/项目由-SSM-迁移到-SpringBoot-过程（二）/" rel="next" title="项目由 SSM 迁移到 SpringBoot 过程（二）">
-                <i class="fa fa-chevron-left"></i> 项目由 SSM 迁移到 SpringBoot 过程（二）
+              <a href="/2019/11/05/Mac创建多个SSH密钥以使用不同的账号/" rel="next" title="Mac创建多个SSH密钥以使用不同的账号">
+                <i class="fa fa-chevron-left"></i> Mac创建多个SSH密钥以使用不同的账号
               </a>
             
           </div>
@@ -491,10 +499,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/19/从上往下打印二叉树/" rel="prev" title="从上往下打印二叉树">
-                从上往下打印二叉树 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -647,7 +651,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">1.</span> <span class="nav-text">说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模式简介"><span class="nav-number">2.</span> <span class="nav-text">模式简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Adapter-模式"><span class="nav-number">3.</span> <span class="nav-text">Adapter 模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#优劣"><span class="nav-number">4.</span> <span class="nav-text">优劣</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#最近在阅读-Java-核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助-Google-翻译，希望在之后的阅读翻译过程中，会有很大的进步。"><span class="nav-number">1.</span> <span class="nav-text">最近在阅读 Java 核心技术卷2高级特性时，由于是英文文档，就试着翻译了一下，其中部分单词还是需要借助 Google 翻译，希望在之后的阅读翻译过程中，会有很大的进步。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-从迭代到流操作"><span class="nav-number">2.</span> <span class="nav-text">1.1 从迭代到流操作</span></a></li></ol></div>
             
 
           </div>
