@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="algorithm,">
+  <meta name="keywords" content="java 核心技术卷2高级特性,">
 
 
 
@@ -79,20 +79,18 @@
 
 
 
-<meta name="description" content="题目描述操作给定的二叉树，将其变换为源二叉树的镜像。 输入描述">
-<meta name="keywords" content="algorithm">
+<meta name="description" content="1.6 简单简化现在你已经知道了如何创建并转换一个流，我们最终也是最重要的一点就是从流的数据中得到我们想要得到的。我们在本节中介绍的方法就是简化。简化是终端的操作，它将流减少为非流值直到可以在程序中被使用。 你早已见到流的简化：count()方法返回了流中元素的数量。 其他的简化有 max() 和 min() 方法，它们返回流中最大值或者是最小值。有一种说法-这些方法返回一个Optional 值，">
+<meta name="keywords" content="java 核心技术卷2高级特性">
 <meta property="og:type" content="article">
-<meta property="og:title" content="二叉树的镜像">
-<meta property="og:url" content="https://ricadro.github.io/2019/03/18/二叉树的镜像/index.html">
+<meta property="og:title" content="1.6 简单简化">
+<meta property="og:url" content="https://ricadro.github.io/2020/01/07/1-6-简单简化/index.html">
 <meta property="og:site_name" content="Ricadro">
-<meta property="og:description" content="题目描述操作给定的二叉树，将其变换为源二叉树的镜像。 输入描述">
+<meta property="og:description" content="1.6 简单简化现在你已经知道了如何创建并转换一个流，我们最终也是最重要的一点就是从流的数据中得到我们想要得到的。我们在本节中介绍的方法就是简化。简化是终端的操作，它将流减少为非流值直到可以在程序中被使用。 你早已见到流的简化：count()方法返回了流中元素的数量。 其他的简化有 max() 和 min() 方法，它们返回流中最大值或者是最小值。有一种说法-这些方法返回一个Optional 值，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ricadro.github.io/2019/03/18/二叉树的镜像/二叉树的镜像.png">
-<meta property="og:updated_time" content="2019-03-18T13:49:19.604Z">
+<meta property="og:updated_time" content="2020-01-07T07:15:49.790Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="二叉树的镜像">
-<meta name="twitter:description" content="题目描述操作给定的二叉树，将其变换为源二叉树的镜像。 输入描述">
-<meta name="twitter:image" content="https://ricadro.github.io/2019/03/18/二叉树的镜像/二叉树的镜像.png">
+<meta name="twitter:title" content="1.6 简单简化">
+<meta name="twitter:description" content="1.6 简单简化现在你已经知道了如何创建并转换一个流，我们最终也是最重要的一点就是从流的数据中得到我们想要得到的。我们在本节中介绍的方法就是简化。简化是终端的操作，它将流减少为非流值直到可以在程序中被使用。 你早已见到流的简化：count()方法返回了流中元素的数量。 其他的简化有 max() 和 min() 方法，它们返回流中最大值或者是最小值。有一种说法-这些方法返回一个Optional 值，">
 
 
 
@@ -123,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://ricadro.github.io/2019/03/18/二叉树的镜像/">
+  <link rel="canonical" href="https://ricadro.github.io/2020/01/07/1-6-简单简化/">
 
 
 
 
 
-  <title>二叉树的镜像 | Ricadro</title>
+  <title>1.6 简单简化 | Ricadro</title>
   
 
 
@@ -266,7 +264,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2019/03/18/二叉树的镜像/">
+    <link itemprop="mainEntityOfPage" href="https://ricadro.github.io/2020/01/07/1-6-简单简化/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ricadro">
@@ -283,7 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">二叉树的镜像</h1>
+          <h1 class="post-title" itemprop="name headline">1.6 简单简化</h1>
         
 
         <div class="post-meta">
@@ -295,8 +293,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-18T21:34:53+08:00">
-                2019-03-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-07T14:49:41+08:00">
+                2020-01-07
               </time>
             
 
@@ -318,8 +316,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/剑指offer/" itemprop="url" rel="index">
-                    <span itemprop="name">剑指offer</span>
+                  <a href="/categories/译文/" itemprop="url" rel="index">
+                    <span itemprop="name">译文</span>
                   </a>
                 </span>
 
@@ -336,8 +334,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/03/18/二叉树的镜像/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/18/二叉树的镜像/" itemprop="commentCount"></span>
+                <a href="/2020/01/07/1-6-简单简化/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/01/07/1-6-简单简化/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -345,7 +343,7 @@
 
           
           
-             <span id="/2019/03/18/二叉树的镜像/" class="leancloud_visitors" data-flag-title="二叉树的镜像">
+             <span id="/2020/01/07/1-6-简单简化/" class="leancloud_visitors" data-flag-title="1.6 简单简化">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -370,7 +368,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  142字
+                  558字
                 </span>
               
 
@@ -386,7 +384,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1分钟
+                  2分钟
                 </span>
               
             </div>
@@ -407,14 +405,15 @@
       
 
       
-        <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>操作给定的二叉树，将其变换为源二叉树的镜像。</p>
-<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p><img src="/2019/03/18/二叉树的镜像/二叉树的镜像.png" alt="输入"></p>
+        <h3 id="1-6-简单简化"><a href="#1-6-简单简化" class="headerlink" title="1.6 简单简化"></a>1.6 简单简化</h3><p>现在你已经知道了如何创建并转换一个流，我们最终也是最重要的一点就是从流的数据中得到我们想要得到的。我们在本节中介绍的方法就是简化。简化是终端的操作，它将流减少为非流值直到可以在程序中被使用。</p>
+<p>你早已见到流的简化：count()方法返回了流中元素的数量。</p>
+<p>其他的简化有 max() 和 min() 方法，它们返回流中最大值或者是最小值。有一种说法-这些方法返回一个Optional <t>值，该值可以包装答案或表明没有答案（因为流恰巧是空的）。在过去，这种情况通常返回 null，但是当程序未完全测试的时候，这样会导致空指针异常。Optional类型是指示缺少返回值的更好方法。 我们将在下一节中详细讨论Optional类型。 这是获取最大流的方法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Optional&lt;String&gt; largest = words.max(String::compareToIgnoreCase);</span><br><span class="line">System.out.println(<span class="string">"largest: "</span> + largest.orElse(<span class="string">""</span>));</span><br></pre></td></tr></table></figure></t></p>
+<p>findFirst() 返回非空集合中的第一个值。 与过滤器结合使用时通常很有用。 例如，在这里找到以字母Q开头的第一个单词（如果存在）：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Optional&lt;String&gt; startsWithQ</span><br><span class="line">    = words.filter(s -&gt; s.startsWith(<span class="string">"Q"</span>)).findFirst();</span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><ul>
-<li>采用递归解决此题即可，不断交换根节点下的左右结点，再以左右结点分别为根节点做交换。</li>
-</ul>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">public class TreeNode &#123;</span></span><br><span class="line"><span class="comment">    int val = 0;</span></span><br><span class="line"><span class="comment">    TreeNode left = null;</span></span><br><span class="line"><span class="comment">    TreeNode right = null;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    public TreeNode(int val) &#123;</span></span><br><span class="line"><span class="comment">        this.val = val;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Mirror</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(root == <span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        exchange(root);</span><br><span class="line">        Mirror(root.left);</span><br><span class="line">        Mirror(root.right);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">private</span> TreeNode <span class="title">exchange</span><span class="params">(TreeNode root)</span></span>&#123;</span><br><span class="line">        TreeNode a = root.left;</span><br><span class="line">        root.left = root.right;</span><br><span class="line">        root.right = a;</span><br><span class="line">        <span class="keyword">return</span> root;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<p>如果你需要匹配任何位置的元素，而不仅是匹配第一个元素，请使用findAny方法。 当并行化流时，此方法很有效，因为该流可以报告它找到的任何匹配项，而不必局限于第一个匹配项。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Optional&lt;String&gt; startsWithQ</span><br><span class="line">      = words.parallel().filter(s -&gt; s.startsWith(<span class="string">"Q"</span>)).findAny();</span><br></pre></td></tr></table></figure></p>
+<p>如果您只是想知道是否有匹配项，请使用anyMatch()。 该方法带有 predicate 参数，因此您无需使用filter。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">boolean</span> aWordStartsWithQ</span><br><span class="line">      = words.parallel().anyMatch(s -&gt; s.startsWith(<span class="string">"Q"</span>));</span><br></pre></td></tr></table></figure></p>
+<p>如果所有元素都不匹配 predicate，则有allMatch()和noneMatch()返回true。 这些方法还受益于并行运行。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">java.util.stream.Stream <span class="number">8</span></span><br><span class="line">• <span class="function">Optional&lt;T&gt; <span class="title">max</span><span class="params">(Comparator&lt;? <span class="keyword">super</span> T&gt; comparator)</span></span></span><br><span class="line"><span class="function">• Optional&lt;T&gt; <span class="title">min</span><span class="params">(Comparator&lt;? <span class="keyword">super</span> T&gt; comparator)</span></span></span><br><span class="line"><span class="function">• Optional&lt;T&gt; <span class="title">findFirst</span><span class="params">()</span></span></span><br><span class="line"><span class="function">• Optional&lt;T&gt; <span class="title">findAny</span><span class="params">()</span></span></span><br><span class="line"><span class="function">• <span class="keyword">boolean</span> <span class="title">anyMatch</span><span class="params">(Predicate&lt;? <span class="keyword">super</span> T&gt; predicate)</span></span></span><br><span class="line"><span class="function">• <span class="keyword">boolean</span> <span class="title">allMatch</span><span class="params">(Predicate&lt;? <span class="keyword">super</span> T&gt; predicate)</span></span></span><br><span class="line"><span class="function">• <span class="keyword">boolean</span> <span class="title">noneMatch</span><span class="params">(Predicate&lt;? <span class="keyword">super</span> T&gt; predicate)</span></span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -465,7 +464,7 @@
 </script>
         <div class="post-tags">
           
-            <a href="/tags/algorithm/" rel="tag"># algorithm</a>
+            <a href="/tags/java-核心技术卷2高级特性/" rel="tag"># java 核心技术卷2高级特性</a>
           
         </div>
       
@@ -478,8 +477,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/10/树的子结构/" rel="next" title="树的子结构">
-                <i class="fa fa-chevron-left"></i> 树的子结构
+              <a href="/2019/12/30/1-5-其他流的转换/" rel="next" title="1.5 其他流的转换">
+                <i class="fa fa-chevron-left"></i> 1.5 其他流的转换
               </a>
             
           </div>
@@ -487,10 +486,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/03/19/顺时针打印矩阵/" rel="prev" title="顺时针打印矩阵">
-                顺时针打印矩阵 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -643,7 +638,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入描述"><span class="nav-number">2.</span> <span class="nav-text">输入描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解题思路"><span class="nav-number">3.</span> <span class="nav-text">解题思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-6-简单简化"><span class="nav-number">1.</span> <span class="nav-text">1.6 简单简化</span></a></li></ol></div>
             
 
           </div>
